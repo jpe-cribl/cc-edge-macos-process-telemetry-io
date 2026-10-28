@@ -4,9 +4,10 @@ groups: {}
 asyncFuncTimeout: 1000
 description: >-
   Parses macOS Endpoint Security process lifecycle events (exec, fork, exit)
-  written as JSON lines by eslogger. Sets top-level process fields, sets index
-  to os and sourcetype to macos:process:lifecycle, and drops events that carry
-  no exec, fork or exit record. Keeps the original _raw.
+  written as JSON lines by eslogger. Sets flat process fields, then removes the
+  parsed Endpoint Security objects and keys, so only the flat fields and _raw
+  remain. Sets index to os and sourcetype to macos:process:lifecycle, and
+  drops events that carry no exec, fork or exit record.
 functions:
   - id: serde
     filter: "true"
@@ -50,6 +51,17 @@ functions:
           value: "'os'"
         - name: sourcetype
           value: "'macos:process:lifecycle'"
+      remove:
+        - process
+        - event
+        - thread
+        - version
+        - seq_num
+        - global_seq_num
+        - mach_time
+        - schema_version
+        - action
+        - action_type
   - id: drop
     filter: "!event_type"
     disabled: false
@@ -59,3 +71,9 @@ functions:
     disabled: false
     conf:
       srcField: time
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      remove:
+        - time

@@ -1,6 +1,6 @@
 [
   {
-    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exec\":{\"target\":{\"executable\":{\"path\":\"/usr/bin/osascript\"}},\"args\":[\"osascript\",\"-e\",\"display notification \\\"Build finished\\\"\"]}},\"time\":\"2026-10-28T16:14:02.118334Z\",\"mach_time\":582031123456}",
+    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exec\":{\"target\":{\"executable\":{\"path\":\"/usr/bin/osascript\"}},\"args\":[\"osascript\",\"-e\",\"display notification \\\"Build finished\\\"\"]}},\"time\":\"2026-10-28T16:14:02.118334Z\",\"mach_time\":582031123456,\"schema_version\":1,\"event_type\":9,\"action\":\"NOTIFY\",\"action_type\":1,\"version\":6,\"seq_num\":1,\"global_seq_num\":1,\"thread\":{\"thread_id\":777}}",
     "_time": 1793204042.118334,
     "event_type": "exec",
     "pid": 4321,
@@ -15,7 +15,7 @@
     "sourcetype": "macos:process:lifecycle"
   },
   {
-    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4210,\"euid\":501,\"egid\":20},\"ppid\":4001,\"original_ppid\":4001,\"executable\":{\"path\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\"},\"signing_id\":\"com.example.shell\",\"team_id\":\"EXAMPLE1234\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"fork\":{\"child\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"executable\":{\"path\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\"}}}},\"time\":\"2026-10-28T16:14:02.110972Z\",\"mach_time\":582031100001}",
+    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4210,\"euid\":501,\"egid\":20},\"ppid\":4001,\"original_ppid\":4001,\"executable\":{\"path\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\"},\"signing_id\":\"com.example.shell\",\"team_id\":\"EXAMPLE1234\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"fork\":{\"child\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"executable\":{\"path\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\"}}}},\"time\":\"2026-10-28T16:14:02.110972Z\",\"mach_time\":582031100001,\"schema_version\":1,\"event_type\":9,\"action\":\"NOTIFY\",\"action_type\":1,\"version\":6,\"seq_num\":1,\"global_seq_num\":1,\"thread\":{\"thread_id\":777}}",
     "_time": 1793204042.110972,
     "event_type": "fork",
     "pid": 4210,
@@ -31,7 +31,7 @@
     "child_exe": "/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell"
   },
   {
-    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exit\":{\"stat\":0}},\"time\":\"2026-10-28T16:14:03.004512Z\",\"mach_time\":582032004512}",
+    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exit\":{\"stat\":0}},\"time\":\"2026-10-28T16:14:03.004512Z\",\"mach_time\":582032004512,\"schema_version\":1,\"event_type\":9,\"action\":\"NOTIFY\",\"action_type\":1,\"version\":6,\"seq_num\":1,\"global_seq_num\":1,\"thread\":{\"thread_id\":777}}",
     "_time": 1793204043.004512,
     "event_type": "exit",
     "pid": 4321,
@@ -45,7 +45,7 @@
     "sourcetype": "macos:process:lifecycle"
   },
   {
-    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4330,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exec\":{\"target\":{\"executable\":{\"path\":\"/usr/bin/osascript\"}},\"args\":[\"osascript\",\"-e\",\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"]}},\"time\":\"2026-10-28T16:14:04.000001Z\",\"mach_time\":582033000001}",
+    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4330,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exec\":{\"target\":{\"executable\":{\"path\":\"/usr/bin/osascript\"}},\"args\":[\"osascript\",\"-e\",\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"]}},\"time\":\"2026-10-28T16:14:04.000001Z\",\"mach_time\":582033000001,\"schema_version\":1,\"event_type\":9,\"action\":\"NOTIFY\",\"action_type\":1,\"version\":6,\"seq_num\":1,\"global_seq_num\":1,\"thread\":{\"thread_id\":777}}",
     "_time": 1793204044.000001,
     "event_type": "exec",
     "pid": 4330,
@@ -60,7 +60,7 @@
     "sourcetype": "macos:process:lifecycle"
   },
   {
-    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4330,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"open\":{\"file\":{\"path\":\"/Users/example/Documents/notes.txt\"},\"fflag\":1}},\"time\":\"2026-10-28T16:14:05.500000Z\",\"mach_time\":582034500000}",
+    "_raw": "{\"process\":{\"audit_token\":{\"pid\":4330,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"open\":{\"file\":{\"path\":\"/Users/example/Documents/notes.txt\"},\"fflag\":1}},\"time\":\"2026-10-28T16:14:05.500000Z\",\"mach_time\":582034500000,\"schema_version\":1,\"event_type\":9,\"action\":\"NOTIFY\",\"action_type\":1,\"version\":6,\"seq_num\":1,\"global_seq_num\":1,\"thread\":{\"thread_id\":777}}",
     "event_type": null,
     "__dropped": true
   }

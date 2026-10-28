@@ -17,7 +17,11 @@ in `default/pipelines/route.yml` matches events whose `datatype` is
 
 - `macos_process_lifecycle` parses each event and sets the fields below. It
   sets `index` to `os` and `sourcetype` to `macos:process:lifecycle`, keeps
-  `_raw`, and drops events that carry no exec, fork or exit record.
+  `_raw`, and drops events that carry no exec, fork or exit record. The parsed
+  Endpoint Security objects and keys (`process`, `event`, `thread`, `version`,
+  `seq_num`, `global_seq_num`, `mach_time`, `schema_version`, `action`,
+  `action_type`, and `time` after `_time` is set) are removed, so they do not
+  duplicate `_raw`.
 
 | Field | Source |
 | --- | --- |

@@ -3,5 +3,5 @@ macos_process_lifecycle:
   sampleName: macos_process_lifecycle.json
   description: "Synthetic eslogger process lifecycle lines: exec, fork and exit, plus an exec with a long argument list."
   created: 1793192033000
-  size: 3126
+  size: 3758
   numEvents: 4
