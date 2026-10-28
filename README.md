@@ -32,6 +32,8 @@ in `default/pipelines/route.yml` matches events whose `datatype` is
 | `args` | `event.exec.args` joined with spaces, capped at 1024 characters |
 | `target_exe` | `event.exec.target.executable.path` |
 | `exit_status` | `event.exit.stat` |
+| `child_pid` | `event.fork.child.audit_token.pid` |
+| `child_exe` | `event.fork.child.executable.path` |
 
 ## Layout
 

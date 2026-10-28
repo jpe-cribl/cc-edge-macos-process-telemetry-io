@@ -42,6 +42,10 @@ functions:
           value: "event.exec && event.exec.target ? event.exec.target.executable.path : null"
         - name: exit_status
           value: "event.exit ? event.exit.stat : null"
+        - name: child_pid
+          value: "event.fork ? event.fork.child.audit_token.pid : null"
+        - name: child_exe
+          value: "event.fork ? event.fork.child.executable.path : null"
         - name: index
           value: "'os'"
         - name: sourcetype

@@ -26,7 +26,9 @@
     "signing_id": "com.example.shell",
     "team_id": "EXAMPLE1234",
     "index": "os",
-    "sourcetype": "macos:process:lifecycle"
+    "sourcetype": "macos:process:lifecycle",
+    "child_pid": 4321,
+    "child_exe": "/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell"
   },
   {
     "_raw": "{\"process\":{\"audit_token\":{\"pid\":4321,\"euid\":501,\"egid\":20},\"ppid\":4210,\"original_ppid\":4210,\"executable\":{\"path\":\"/usr/bin/osascript\"},\"signing_id\":\"com.apple.osascript\",\"responsible_audit_token\":{\"pid\":4200,\"euid\":501,\"egid\":20}},\"event\":{\"exit\":{\"stat\":0}},\"time\":\"2026-10-28T16:14:03.004512Z\",\"mach_time\":582032004512}",
