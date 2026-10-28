@@ -1,0 +1,15 @@
+id: default
+groups: {}
+comments: []
+routes:
+  - id: macos_process_lifecycle
+    name: macOS process lifecycle events
+    final: true
+    disabled: false
+    pipeline: macos_process_lifecycle
+    description: "Sends macOS Endpoint Security process lifecycle events to the macos_process_lifecycle pipeline."
+    enableOutputExpression: false
+    targetContext: group
+    filter: "datatype=='macos-process-lifecycle'"
+    clones: []
+    output: __group

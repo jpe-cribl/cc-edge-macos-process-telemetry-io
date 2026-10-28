@@ -1,0 +1,79 @@
+output: default
+streamtags: []
+groups: {}
+asyncFuncTimeout: 1000
+description: >-
+  Parses macOS Endpoint Security process lifecycle events (exec, fork, exit)
+  written as JSON lines by eslogger. Sets flat process fields, then removes the
+  parsed Endpoint Security objects and keys, so only the flat fields and _raw
+  remain. Sets index to os and sourcetype to macos:process:lifecycle, and
+  drops events that carry no exec, fork or exit record.
+functions:
+  - id: serde
+    filter: "true"
+    disabled: false
+    conf:
+      mode: extract
+      type: json
+      srcField: _raw
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      add:
+        - name: event_type
+          value: "event.exec ? 'exec' : (event.fork ? 'fork' : (event.exit ? 'exit' : null))"
+        - name: pid
+          value: "process.audit_token.pid"
+        - name: ppid
+          value: "process.ppid"
+        - name: original_ppid
+          value: "process.original_ppid"
+        - name: responsible_pid
+          value: "process.responsible_audit_token ? process.responsible_audit_token.pid : null"
+        - name: exe_path
+          value: "process.executable.path"
+        - name: signing_id
+          value: "process.signing_id"
+        - name: team_id
+          value: "process.team_id"
+        - name: args
+          value: "event.exec && event.exec.args ? event.exec.args.join(' ').substring(0, 1024) : null"
+        - name: target_exe
+          value: "event.exec && event.exec.target ? event.exec.target.executable.path : null"
+        - name: exit_status
+          value: "event.exit ? event.exit.stat : null"
+        - name: child_pid
+          value: "event.fork ? event.fork.child.audit_token.pid : null"
+        - name: child_exe
+          value: "event.fork ? event.fork.child.executable.path : null"
+        - name: index
+          value: "'os'"
+        - name: sourcetype
+          value: "'macos:process:lifecycle'"
+      remove:
+        - process
+        - event
+        - thread
+        - version
+        - seq_num
+        - global_seq_num
+        - mach_time
+        - schema_version
+        - action
+        - action_type
+  - id: drop
+    filter: "!event_type"
+    disabled: false
+    conf: {}
+  - id: auto_timestamp
+    filter: "true"
+    disabled: false
+    conf:
+      srcField: time
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      remove:
+        - time
