@@ -69,7 +69,7 @@ functions:
     conf:
       add:
         - name: _raw
-          value: "JSON.stringify({event_type: event_type, pid: pid, ppid: ppid, original_ppid: original_ppid, responsible_pid: responsible_pid, exe_path: exe_path, signing_id: signing_id, team_id: team_id, args: args, target_exe: target_exe, exit_status: exit_status, child_pid: child_pid, child_exe: child_exe})"
+          value: "JSON.stringify({event_type: event_type, pid: pid, ppid: ppid, original_ppid: original_ppid, responsible_pid: responsible_pid, exe_path: exe_path, signing_id: signing_id, team_id: team_id, args: args, target_exe: target_exe, exit_status: exit_status, child_pid: child_pid, child_exe: child_exe}, (k, v) => v === null ? undefined : v)"
   - id: drop
     filter: "!event_type"
     disabled: false
