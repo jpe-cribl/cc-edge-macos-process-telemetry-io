@@ -5,8 +5,8 @@ asyncFuncTimeout: 1000
 description: >-
   Parses macOS Endpoint Security process lifecycle events (exec, fork, exit)
   written as JSON lines by eslogger. Sets flat process fields, then removes the
-  parsed Endpoint Security objects and keys, so only the flat fields and _raw
-  remain. Sets index to os and sourcetype to macos:process:lifecycle, and
+  parsed Endpoint Security objects and keys, then rewrites _raw as JSON of the
+  flat fields only, so the process environment is never forwarded. Sets index to os and sourcetype to macos:process:lifecycle, and
   drops events that carry no exec, fork or exit record.
 functions:
   - id: serde
@@ -62,6 +62,14 @@ functions:
         - schema_version
         - action
         - action_type
+  - id: eval
+    filter: "true"
+    disabled: false
+    description: Replaces _raw with only the flat fields so the process environment and file descriptors never leave the host.
+    conf:
+      add:
+        - name: _raw
+          value: "JSON.stringify({event_type: event_type, pid: pid, ppid: ppid, original_ppid: original_ppid, responsible_pid: responsible_pid, exe_path: exe_path, signing_id: signing_id, team_id: team_id, args: args, target_exe: target_exe, exit_status: exit_status, child_pid: child_pid, child_exe: child_exe})"
   - id: drop
     filter: "!event_type"
     disabled: false

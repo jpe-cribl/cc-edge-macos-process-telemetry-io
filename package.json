@@ -1,6 +1,6 @@
 {
   "name": "cc-edge-macos-process-telemetry-io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minLogStreamVersion": "4.16.0",
   "author": "Jacob <20714140+JacobPEvans-personal@users.noreply.github.com>",
   "description": "Cribl Edge pack that parses macOS Endpoint Security process lifecycle events (exec, fork, exit) into searchable fields.",
