@@ -60,7 +60,7 @@
     "sourcetype": "macos:process:lifecycle"
   },
   {
-    "_raw": "{}",
+    "_raw": "{\"event_type\":null,\"pid\":4330,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"args\":null,\"target_exe\":null,\"exit_status\":null,\"child_pid\":null,\"child_exe\":null}",
     "event_type": null,
     "__dropped": true
   }
