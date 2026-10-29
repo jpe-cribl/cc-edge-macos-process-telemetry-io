@@ -1,6 +1,6 @@
 [
   {
-    "_raw": "{\"event_type\":\"exec\",\"pid\":4321,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"args\":\"osascript -e display notification \\\"Build finished\\\"\",\"target_exe\":\"/usr/bin/osascript\"}",
+    "_raw": "{\"event_type\":\"exec\",\"pid\":4321,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"args\":\"osascript -e display notification \\\"Build finished\\\"\",\"target_exe\":\"/usr/bin/osascript\",\"exit_status\":null,\"child_pid\":null,\"child_exe\":null}",
     "_time": 1793204042.118334,
     "event_type": "exec",
     "pid": 4321,
@@ -15,7 +15,7 @@
     "sourcetype": "macos:process:lifecycle"
   },
   {
-    "_raw": "{\"event_type\":\"fork\",\"pid\":4210,\"ppid\":4001,\"original_ppid\":4001,\"responsible_pid\":4200,\"exe_path\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\",\"signing_id\":\"com.example.shell\",\"team_id\":\"EXAMPLE1234\",\"child_pid\":4321,\"child_exe\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\"}",
+    "_raw": "{\"event_type\":\"fork\",\"pid\":4210,\"ppid\":4001,\"original_ppid\":4001,\"responsible_pid\":4200,\"exe_path\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\",\"signing_id\":\"com.example.shell\",\"team_id\":\"EXAMPLE1234\",\"args\":null,\"target_exe\":null,\"exit_status\":null,\"child_pid\":4321,\"child_exe\":\"/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell\"}",
     "_time": 1793204042.110972,
     "event_type": "fork",
     "pid": 4210,
@@ -31,7 +31,7 @@
     "child_exe": "/Users/example/Applications/Example Shell.app/Contents/MacOS/example-shell"
   },
   {
-    "_raw": "{\"event_type\":\"exit\",\"pid\":4321,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"exit_status\":0}",
+    "_raw": "{\"event_type\":\"exit\",\"pid\":4321,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"args\":null,\"target_exe\":null,\"exit_status\":0,\"child_pid\":null,\"child_exe\":null}",
     "_time": 1793204043.004512,
     "event_type": "exit",
     "pid": 4321,
@@ -45,7 +45,7 @@
     "sourcetype": "macos:process:lifecycle"
   },
   {
-    "_raw": "{\"event_type\":\"exec\",\"pid\":4330,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"args\":\"osascript -e xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"target_exe\":\"/usr/bin/osascript\"}",
+    "_raw": "{\"event_type\":\"exec\",\"pid\":4330,\"ppid\":4210,\"original_ppid\":4210,\"responsible_pid\":4200,\"exe_path\":\"/usr/bin/osascript\",\"signing_id\":\"com.apple.osascript\",\"args\":\"osascript -e xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"target_exe\":\"/usr/bin/osascript\",\"exit_status\":null,\"child_pid\":null,\"child_exe\":null}",
     "_time": 1793204044.000001,
     "event_type": "exec",
     "pid": 4330,
